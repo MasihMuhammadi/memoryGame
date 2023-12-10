@@ -91,11 +91,11 @@ const App = () => {
         </select>
       </div>
 
-      <div className=" mx-5 row row-cols-6 row-cols-sm-4 row-cols-md-5 row-cols-lg-7 gap-2">
+      <div className=" mx-4 row row-cols-6 row-cols-sm-4 row-cols-md-5 row-cols-lg-7 gap-2">
         {cards.map((card, index) => (
           <div
             key={index}
-            style={{ fontSize: "30px", cursor: "pointer" }}
+            style={{ fontSize: "25px", cursor: "pointer" }}
             className={`col bg-light border border-dark rounded p-0 rounded-md  ${flippedCards.includes(index) || matchedCards.includes(index) ? 'opacity-100' : ''}`}
             onClick={() => handleCardClick(index)}
           >
